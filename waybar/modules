@@ -1,0 +1,106 @@
+{	
+	"wlr/workspaces": {
+	"format": "{icon}",
+	"on-click": "activate",
+	"all-outputs": true,
+	"format-icons": {
+		"1": "",
+		"2": "",
+		"3": "",
+		"4": "",
+        "5": "",
+        "6": "",
+        "7": "",
+        "8": "",
+        "10": "﮼",
+		"focused": "",
+		"default": ""
+	}
+  },
+
+    "battery": {
+		"interval": 60,
+		"align": 0,
+		"rotate": 0,
+		"full-at": 100,
+		"design-capacity": false,
+        "states": {
+            "good": 95,
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{icon} {capacity}%",
+        "format-charging": " {capacity}%",
+        "format-plugged": " {capacity}%",
+        "format-full": "{icon} Full",
+        "format-alt": "{icon} {time}",
+        "format-icons": ["", "", "", "", ""],
+        "format-time": "{H}h {M}min",
+        "tooltip": true
+    },
+
+    "clock": {
+		"interval": 60,
+		"align": 0,
+		"rotate": 0,
+        "timezone": "America/Bogota",
+        "tooltip-format": "<big>{:%B %Y}</big>\n<tt><small>{calendar}</small></tt>",
+        "format": " {:%H:%M}",
+        "format-alt": " {:%a %b %d, %G}"
+    },
+
+    "cpu": {
+         "interval": 5,
+         "format": " {usage}%"
+    },
+
+    "custom/menu": {
+         "format": "",
+         "tooltip": false,
+         "on-click": "$HOME/.config/hypr/scripts/menu"
+    },
+
+    "custom/power": {
+         "format": "",
+         "tooltip": false,
+         "on-click": "$HOME/.config/hypr/scripts/wlogout"
+    },
+      	
+    "memory": {
+         "interval": 10,
+         "format": " {used:0.1f}G"
+    },
+
+    "network": {
+		"interval": 5,
+        "format-wifi": "",
+        "format-ethernet": "",
+        "format-linked": " {ifname} (No IP)",
+        "format-disconnected": "睊 Disconnected",
+        "format-disabled": "睊 Disabled",
+        "format-alt": "{essid}",
+        "tooltip-format": " {ifname} via {gwaddr}"
+    },
+
+    "pulseaudio": {
+        "format": "{icon} {volume}%",
+        "format-muted": " Mute",
+        "format-bluetooth": " {volume}% {format_source}",
+        "format-bluetooth-muted": " Mute",
+        "format-source": " {volume}%",
+        "format-source-muted": "",
+        "format-icons": {
+            "headphone": "",
+            "hands-free": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": ["", "", ""]
+        },
+        "scroll-step": 5.0,
+        "on-click": "pamixer --toggle-mute",
+        "on-click-right": "pavucontrol",
+        "smooth-scrolling-threshold": 1
+    }
+}

@@ -1,0 +1,24 @@
+@define-color main_color              #efefef;
+@define-color second_color            #1e1e1e;
+@define-color other_color             #efefef;
+
+@define-color cpu                     #8b96ff;
+
+@define-color memory                  #8bbfff;
+
+@define-color clock                   #ffae8b;
+
+@define-color network                 #fff78b;
+
+@define-color pulseaudio              #dcff8b;
+@define-color audio_bluetooth         #f5c2e7;
+
+@define-color bg_disabled             #313244;
+@define-color fg_disabled             #cdd6f4;
+
+@define-color battery                 #ffd78b;
+@define-color battery_critical        #f38ba8;
+
+@define-color menu                    #c08bff;
+
+@define-color power                   #ff8b8b;
